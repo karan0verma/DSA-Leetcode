@@ -3,7 +3,7 @@ class Solution {
         HashSet <Character> set= new HashSet<>(); 
         int i=0,j=0,count=0;
         int n=s.length();     
-        while(j<n){
+        while(i<=j && j<n){
             if(!set.contains(s.charAt(j)))
             {
                   set.add(s.charAt(j));
