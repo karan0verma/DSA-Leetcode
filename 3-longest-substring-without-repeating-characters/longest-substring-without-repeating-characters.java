@@ -10,7 +10,7 @@ class Solution {
                   count=Math.max(j-i+1,count);
                 j++;
             }
-            else if(set.contains(s.charAt(j))){
+            else {
                   set.remove(s.charAt(i));
                 i++;
             }
