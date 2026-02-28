@@ -1,17 +1,17 @@
 class Solution {
 
-    // public static boolean kyaBanana(int mid,int []piles,int h){
-    //  long totalTime =0;
-    //     for(int i=0;i<piles.length;i++){
-    //        totalTime +=piles[i]/mid;
-    //         if(piles[i]%mid!=0)
-    //         {
-    //             // totalTime+=totalTimes +1;
-    //             totalTime++;
-    //         }
-    //     }
-    //     return totalTime<=h;
-    // }
+    public static boolean kyaBanana(int mid,int []piles,int h){
+     long totalTime =0;
+        for(int i=0;i<piles.length;i++){
+           totalTime +=piles[i]/mid;
+            if(piles[i]%mid!=0)
+            {
+                // totalTime+=totalTimes +1;
+                totalTime++;
+            }
+        }
+        return totalTime<=h;
+    }
     public int minEatingSpeed(int[] piles, int h) {
         int low=1;
         int high=0;
@@ -34,17 +34,5 @@ class Solution {
             }
         }
         return ans;
-    }
-      public static boolean kyaBanana(int mid,int []piles,int h){
-     long totalTime =0;
-        for(int i=0;i<piles.length;i++){
-           totalTime +=piles[i]/mid;
-            if(piles[i]%mid!=0)
-            {
-                // totalTime+=totalTimes +1;
-                totalTime++;
-            }
-        }
-        return totalTime<=h;
     }
 }
