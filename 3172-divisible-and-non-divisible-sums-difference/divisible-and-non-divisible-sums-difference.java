@@ -7,7 +7,7 @@ class Solution {
             if(i%m==0){
                 sum1+=i;
             }
-            if(i%m!=0){
+            else{
                 sum2+=i;
             }
              ans=sum2-sum1;
