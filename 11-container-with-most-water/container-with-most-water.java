@@ -9,17 +9,16 @@ class Solution {
 //     }
 // }
 // return maxArea;
-        int n= height.length;
+        int n=height.length;
+        int maxArea=0;
+        // int minheight=0;
+        int width=0;
         int i=0;
         int j=n-1;
-        int min_height=0;
-        int area=0;
-        int width=0;
-        while(i<j)
-        {
-            min_height= Math.min(height[i],height[j]);
-           width=j-i;
-            area= Math.max(area, width*min_height);
+        while(i<j){
+            width=j-i;
+            int area=width*Math.min(height[i],height[j]);
+            maxArea=Math.max(maxArea,area);
             if(height[i]<=height[j]){
                 i++;
             }
@@ -27,6 +26,6 @@ class Solution {
                 j--;
             }
         }
-        return area;
+        return maxArea;
     }
 }
