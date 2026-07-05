@@ -11,9 +11,9 @@ class Solution {
         // return MaxArea;
         int i=0;
         int j=n-1;
-        int width=0;
+        // int width=0;
         while(i<j){
-            width=j-i;
+         int    width=j-i;
             int area=width*Math.min(height[i],height[j]);
             MaxArea=Math.max(area, MaxArea);
             if(height[i]<=height[j]){
