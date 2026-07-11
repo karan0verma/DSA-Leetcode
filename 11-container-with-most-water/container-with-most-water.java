@@ -3,7 +3,6 @@ class Solution {
       int n=height.length;
       int maxarea=0;
       int width=0;
-      int minheight=0;
       int i=0;
       int j=n-1;
       while(i<j){
