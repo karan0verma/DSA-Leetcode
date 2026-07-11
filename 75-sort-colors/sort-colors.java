@@ -16,9 +16,9 @@ class Solution {
                 j++;
             }
             else{
-                int temp=nums[j];
-                nums[j]=nums[k];
-                nums[k]=temp;
+                int temp=nums[k];
+                nums[k]=nums[j];
+                nums[j]=temp;
                 k--;
             }
         }
